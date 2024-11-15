@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>enter number <input type="text" class="userinput"/></h3>
+    <button onclick="result()">submit</button>
+    <P class="output"></P>
+</body>
+<script>
+function result() {
+    let num=Number(document.querySelector(".userinput").value);
+    let output=document.querySelector(".output");
+    for(let i=0;i< num;i++){
+    for( let j=0;j< num;j++){
+        output.innerHTML+="*";
+}
+     output.innerHTML+="<br>";
+}
+}
+
+</script>
+</html>
